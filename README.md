@@ -88,3 +88,48 @@ Linear Programming: Optimizing labor placement based on Attractiveness Scores.
 Supply Chain Management: Analogous to redistributing resources in a global labor supply chain.
 Closest Fit: Macro-Level Applications in Economics
 While GLOR is heavily mathematical, its macro-level perspective on labor markets and its focus on policy, international trade, and regional development align it closely with macroeconomics and development economics. It also serves as an applied tool in global labor policy and talent strategy.
+
+
+Functions:
+
+calculate_attractiveness()
+Purpose: Computes the Attractiveness Score for one or more regions based on user-provided data and weights.
+Inputs:
+Data frame with regional metrics.
+Customizable weights for factors like Cost of Living, Talent Pool, etc.
+Outputs: A data frame with regions and their Attractiveness Scores.
+
+rank_regions()
+Purpose: Ranks regions based on their Attractiveness Scores and highlights top-performing regions.
+Inputs:
+Data frame with calculated scores.
+Number of top regions to display (default: all regions).
+Outputs: Ranked list of regions or a subset based on the top_n parameter.
+
+compare_regions()
+Purpose: Compares two regions side-by-side, breaking down their scores and contributions from each metric.
+Inputs:
+Data frame with regional data.
+Names of two regions to compare.
+Outputs:
+A comparison table showing metric-level differences.
+An optional visualization (bar chart or radar plot).
+
+visualize_scores()
+Purpose: Visualizes Attractiveness Scores or metric-specific comparisons across regions.
+Inputs:
+Data frame with regional metrics and scores.
+Visualization type (bar, scatter, heatmap, etc.).
+Outputs: A ggplot object.
+Visualizes attractiveness scores for all regions.
+
+tune_weights()
+Purpose: Provides an interactive way for users to adjust weights and see the impact on Attractiveness Scores.
+Inputs:
+Data frame with regional metrics.
+Initial weights for metrics (optional).
+Outputs:
+Updated weights.
+Recalculated Attractiveness Scores.
+
+
