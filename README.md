@@ -199,11 +199,14 @@ R
 Copy code
 
 data$Cost_of_Living <- (data$Cost_of_Living - min(data$Cost_of_Living)) / (max(data$Cost_of_Living) - min(data$Cost_of_Living))
+
 3. Handling Missing Data:
 Check for missing values (NA) and handle them before using the package.
 Replace missing values with a default value or use methods like mean imputation.
+
 4. Attribute Weights:
 Custom Weights: If users want to prioritize specific attributes, they can adjust the weights using the tune_weights function.
+
 5. Data Validation:
 Ensure the dataset has:
 No duplicate rows for Region.
