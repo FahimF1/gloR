@@ -35,7 +35,7 @@ The Global Labor Optimization Redistribution (GLOR) algorithm, conceptualized by
 
 This algorithm stands out for its originality in combining these diverse elements into a cohesive model, providing a strategic solution to contemporary labor market dynamics. Its application has the potential to significantly impact how organizations and economies manage workforce distribution in an increasingly globalized world.
 
-Benefits of GLOR
+Benefits of GLOR:
 For Employers:
 Cost savings, access to untapped talent, and reduced reliance on over-saturated markets.
 For Workers:
@@ -43,44 +43,44 @@ New opportunities in regions with a lower cost of living and better quality of l
 For Regions:
 Economic growth through labor redistribution.
 
-Future Applications
+Future Applications:
 Policymaking: Supporting governments in labor mobility decisions.
 Corporate Strategy: Guiding multinational hiring practices.
 Talent Platforms: Enhancing global job-matching algorithms.
 
-Conclusion
+Conclusion:
 Call for pilot projects to test and refine the framework.
 Vision for a balanced and efficient labor ecosystem.
 
 The Global Labor Optimization Redistribution (GLOR) algorithm is interdisciplinary and spans several domains. Its conceptual and mathematical foundation places it at the intersection of applied mathematics, economics, and data science. Here's a breakdown of the fields it touches:
 
-1. Core Discipline: Applied Mathematics
+1. Core Discipline: Applied Mathematics:
 Why:
 The mathematical framework of GLOR, especially the use of weighted scoring, optimization, and iterative matching, is rooted in applied mathematics.
 Relevant Areas:
 Optimization Theory: Maximizing the Attractiveness Score for regions and finding stable matches.
 Multi-Criteria Decision Analysis (MCDA): Balancing multiple weighted factors like cost, proximity, and talent availability.
 Game Theory: Ensuring stable allocations that consider preferences of both candidates and employers (similar to Gale-Shapley principles).
-2. Economics
+2. Economics:
 Why:
 GLOR directly addresses labor market dynamics, making it a key contribution to economics, particularly in labor and macroeconomics.
 Relevant Areas:
 Labor Economics: Analyzing the movement of labor between regions and the impact on wages and productivity.
 Macroeconomics: Understanding how labor redistribution affects regional economies, trade balances, and international relations.
 Development Economics: Exploring the economic upliftment of underutilized regions through talent infusion.
-3. Computational Social Science
+3. Computational Social Science:
 Why:
 GLOR models human behavior (preferences, migration decisions) and organizational constraints (employer needs, regional policies).
 Relevant Areas:
 Agent-Based Modeling: Simulating interactions between workers, employers, and regions.
 Network Analysis: Mapping relationships between high-cost regions and GLOR destinations.
-4. Data Science
+4. Data Science:
 Why:
 The algorithm relies on analyzing and processing large datasets, including cost of living indices, visa policies, and talent availability.
 Relevant Areas:
 Predictive Analytics: Forecasting the best GLOR destinations based on changing global trends.
 Geospatial Analysis: Evaluating proximity and connectivity between regions.
-5. Operations Research
+5. Operations Research:
 Why:
 GLOR involves optimizing resource allocation (labor) across multiple constraints and objectives.
 Relevant Areas:
