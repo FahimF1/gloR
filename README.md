@@ -132,4 +132,86 @@ Outputs:
 Updated weights.
 Recalculated Attractiveness Scores.
 
+About the Dummy Dataset
+1. Name and Purpose:
+   
+Dataset Name: dummy_data
 
+Purpose:
+
+The dataset is included as a small, pre-loaded example to demonstrate how the package functions.
+Users can run the provided examples with this dataset to understand how the functions (calculate_attractiveness, rank_regions, etc.) work.
+
+3. Structure
+   
+The dataset contains 6 columns:
+
+Region: Name of the region (e.g., Mexico, Canada).
+Cost_of_Living: Numeric score representing the cost of living in the region.
+Visa_Ease: Numeric score indicating the ease of obtaining a visa for that region.
+Tax_Benefits: Numeric score for tax-related advantages.
+Proximity: Numeric score for geographic proximity to stakeholders.
+Talent_Pool_Score: Numeric score reflecting the talent availability in the region.
+
+Example Preview
+
+Here’s how the dataset looks:
+
+
+Region	Cost_of_Living	Visa_Ease	Tax_Benefits	Proximity	Talent_Pool_Score
+Mexico	0.5	0.8	0.7	0.2	0.71
+Canada	0.6	0.9	0.6	0.3	0.68
+Poland	0.7	0.7	0.8	0.5	0.56
+
+3. Normalization
+
+Is the dataset normalized?
+
+Yes, the numeric columns (e.g., Cost_of_Living, Visa_Ease) are normalized to a scale of 0 to 1.
+
+
+Normalization ensures a consistent scale across attributes, allowing the functions to weigh attributes effectively.
+
+
+Using Your Own Dataset
+
+Users can import their datasets for analysis using gloR. Here’s what they need to know:
+
+
+1. Format
+
+The dataset must be a data frame with the following columns:
+Region (character): Names of regions to evaluate.
+Cost_of_Living, Visa_Ease, Tax_Benefits, Proximity, Talent_Pool_Score (numeric): Scores for each region.
+Additional attributes can be added, but these are required.
+
+2. Normalization
+
+Normalize Your Data:
+
+Ensure all numeric columns are scaled (e.g., between 0 and 1).
+Use R functions like scale() or custom normalization before running gloR functions.
+
+Example:
+
+R
+
+Copy code
+
+data$Cost_of_Living <- (data$Cost_of_Living - min(data$Cost_of_Living)) / (max(data$Cost_of_Living) - min(data$Cost_of_Living))
+3. Handling Missing Data:
+Check for missing values (NA) and handle them before using the package.
+Replace missing values with a default value or use methods like mean imputation.
+4. Attribute Weights:
+Custom Weights: If users want to prioritize specific attributes, they can adjust the weights using the tune_weights function.
+5. Data Validation:
+Ensure the dataset has:
+No duplicate rows for Region.
+Consistent column names matching the requirements of the package.
+Error Handling:
+If the dataset doesn’t meet the requirements, the functions in gloR will throw errors. Users should:
+
+
+Verify column names and structure.
+Normalize and clean the data.
+Ensure all required attributes are present.
